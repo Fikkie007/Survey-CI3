@@ -10,6 +10,7 @@ class Admin extends CI_Controller
         $this->load->model('Pertanyaan_model');
         $this->load->library('form_validation');
         $this->load->library('pagination');
+        $this->load->model('Sort_model');
     }
     public function index()
     {
@@ -367,12 +368,17 @@ class Admin extends CI_Controller
 
     public function sortKategori($id)
     {
-        $query = $this->db->query("SELECT `a`.`id`,`a`.`id_kategori`, `a`.`pertanyaan`, `b`.`kategori`
-        FROM `pertanyaan` AS `a`
-        JOIN `kategori` AS  `b`
-        ON `a`.`id_kategori` = `b`.`id`
-        WHERE b.id = $id;
-                    ");
-        return $query->result();
+
+        $data['title'] = 'Sort Kategori';
+        $data['user'] = $this->db->get_where('user', ['email' =>
+        $this->session->userdata('email')])->row_array();
+        $data2['kategori'] = $this->db->get('kategori')->result_array();
+        $data2['query'] = $this->Sort_model->sort($id);
+
+
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/side-menu', $data);
+        $this->load->view('admin/pertanyaan-sort', $data2);
+        $this->load->view('admin/footer');
     }
 }
