@@ -29,31 +29,36 @@
                     Hasil Kuisioner <?php echo $h['kategori'] ?>
                 </div>
                 <div class="card-body" style="background-color: #D9D9D9;">
-                    <!-- <table class="table">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Data</th>
+                                <th scope="col"></th>
                                 <th scope="col">Jawaban 1</th>
                                 <th scope="col">Jawaban 2</th>
                                 <th scope="col">Jawaban 3</th>
                                 <th scope="col">Jawaban 4</th>
-                                <th scope="col">Jawaban 5</th>
-                                <th scope="col">Jawaban 5</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>Jumlah Jawaban</th>
+                                <th>Pertanyaan</th>
+                                <th><?php echo  $h['pertanyaan'] ?></th>
+                                <td><?php echo $h['answer'] == 1 ?></td>
+                                <td><?php echo $h['answer'] == 2 ?></td>
+                                <td><?php echo $h['answer'] == 3 ?></td>
+                                <td><?php echo $h['answer'] == 4 ?></td>
+                                <td><?php echo $h['answer'] == 5 ?></td>
                             </tr>
                             <tr>
                                 <th>Presentase</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>Jumlah Jawaban</th>
                             </tr>
                         </tbody>
-                    </table> -->
-
-                    <?php
-                    echo $h['pertanyaan'];
-                    ?>
+                    </table>
                 </div>
             </div><br><br>
         <?php endforeach; ?>

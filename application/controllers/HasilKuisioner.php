@@ -17,7 +17,6 @@ class HasilKuisioner extends CI_Controller
         $data['kategori'] = $this->db->get('kategori')->result_array();
         $data['hasil'] = $this->Hasil_model->hasil();
 
-
         $this->load->view('admin/header', $data);
         $this->load->view('admin/side-menu', $data);
         $this->load->view('admin/hasil-kuisioner', $data);
