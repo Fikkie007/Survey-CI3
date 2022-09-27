@@ -198,6 +198,7 @@
             </div>
             <?php $i++; ?>
         <?php endforeach; ?>
+        <br><br>
         <div class="container">
             <button class="btn btn-primary" type="submit">Submit</button>
         </div>
@@ -217,6 +218,5 @@
     </script> -->
 </body>
 <br>
-
 
 </html>

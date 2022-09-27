@@ -48,7 +48,6 @@
                                 <td><?php echo $h['answer'] == 2 ?></td>
                                 <td><?php echo $h['answer'] == 3 ?></td>
                                 <td><?php echo $h['answer'] == 4 ?></td>
-                                <td><?php echo $h['answer'] == 5 ?></td>
                             </tr>
                             <tr>
                                 <th>Presentase</th>
