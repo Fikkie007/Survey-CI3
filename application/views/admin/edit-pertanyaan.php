@@ -31,7 +31,7 @@
                 Kategori Kuisioner
             </div>
             <div class="card-body" style="background-color: #D9D9D9;">
-                <table class="table" id="kategori">
+                <table class="table" id="myTable">
                     <thead>
                         <tr>
                             <th scope="col">No.</th>

@@ -54,6 +54,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="Assets/web.png" />
     <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
 
     <nav class="navbar navbar-light justify-content-between" style="background-color:#EDF3F3">
         <a href="https://perumdatugutirta.co.id/">
@@ -199,6 +201,13 @@
             <?php $i++; ?>
         <?php endforeach; ?>
         <br><br>
+        <div class="container-fluid">
+            <div>
+                <input type="hidden" name="content" value="<?= set_value('content') ?>">
+                <div id="editor" style="min-height: 160px;"><?= set_value('content') ?></div>
+            </div>
+        </div>
+        <br><br>
         <div class="container">
             <button class="btn btn-primary" type="submit">Submit</button>
         </div>
@@ -218,5 +227,28 @@
     </script> -->
 </body>
 <br>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script>
+    var quill = new Quill('#editor', {
+        placeholder: 'Kritik Dan Saran',
+        theme: 'snow',
+        modules: {
+            toolbar: [
+                [{
+                    list: "ordered"
+                }, {
+                    list: "bullet"
+                }],
+                [{
+                    font: []
+                }],
+                ["bold", "italic", "underline"],
+            ]
+        },
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='content']").value = quill.root.innerHTML;
+    });
+</script>
 
 </html>

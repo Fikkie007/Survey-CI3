@@ -5,10 +5,12 @@ class Hasil_model extends CI_Model
     public function hasil()
     {
 
-        $query = "SELECT * FROM pertanyaan JOIN kategori 
-        ON pertanyaan.id_kategori = kategori.id 
-        JOIN jawaban_coba ON pertanyaan.id = jawaban_coba.pertanyaan_id 
-        GROUP BY pertanyaan.id_kategori, pertanyaan.id; ";
+        $query = "
+        SELECT * FROM pertanyaan 
+        JOIN kategori ON pertanyaan.id_kategori = kategori.id 
+        JOIN jawaban_coba ON pertanyaan.id = jawaban_coba.pertanyaan_id
+        JOIN data_pelanggan ON jawaban_coba.data_pelanggan_id = data_pelanggan.id
+        ";
         return $this->db->query($query)->result_array();
     }
 }
