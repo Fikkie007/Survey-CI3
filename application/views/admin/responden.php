@@ -22,7 +22,7 @@
                     Responden
                 </div>
                 <div class="card-body" style="background-color: #D9D9D9;">
-                    <table class="table">
+                    <table class="table" id="responden">
                         <thead>
                             <tr>
                                 <th scope="col">No.</th>

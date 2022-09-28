@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="<?= base_url('Assets/AdminLTE/plugins/daterangepicker/daterangepicker.css') ?>">
     <!-- summernote -->
     <link rel="stylesheet" href="<?= base_url('Assets/AdminLTE/plugins/summernote/summernote-bs4.css') ?>">
+    <link rel="stylesheet" href="/cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -62,14 +65,14 @@
                         <i class="fas fa-search"></i>
                     </a>
                     <div class="navbar-search-block">
-                        <form class="form-inline">
+                        <form class="form-inline" method="POST" action="<?php echo base_url('Admin/search') ?>">
                             <div class="input-group input-group-sm">
-                                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control form-control-navbar" type="text" placeholder="Search" aria-label="Search" name="keyword" autocomplete="off">
                                 <div class="input-group-append">
                                     <button class="btn btn-navbar" type="submit">
                                         <i class="fas fa-search"></i>
                                     </button>
-                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                    <button class="btn btn-navbar" type="submit" data-widget="navbar-search" name="submit">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>

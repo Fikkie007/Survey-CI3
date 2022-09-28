@@ -381,4 +381,8 @@ class Admin extends CI_Controller
         $this->load->view('admin/pertanyaan-sort', $data2);
         $this->load->view('admin/footer');
     }
+
+    public function search()
+    {
+    }
 }
