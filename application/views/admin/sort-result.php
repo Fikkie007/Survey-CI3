@@ -36,6 +36,7 @@
                             <?php foreach ($button as $h2) : ?>
                                 <li><a class="dropdown-item" href="<?php echo base_url('HasilKuisioner/aaa/') ?><?php echo $h2['kategori'] ?>"><?php echo $h2['kategori'] ?></a></li>
                             <?php endforeach; ?>
+                            <li><a class="dropdown-item" href="<?php echo base_url('HasilKuisioner') ?>">Show All</a></li>
                         </ul>
                     </div><br>
                     <table class="table" id="myTable">
@@ -50,7 +51,7 @@
                         </thead>
                         <tbody>
                             <?php $i = 1; ?>
-                            <?php foreach ($hasil as $h) : ?>
+                            <?php foreach ($sort as $h) : ?>
                                 <tr>
                                     <th scope="row"><?php echo $i ?></th>
                                     <td><?php echo $h['name'] ?></td>

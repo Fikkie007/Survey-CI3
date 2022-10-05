@@ -24,16 +24,25 @@
             <div class="card-body" style="background-color: #D9D9D9;">
                 <table class="table" id="myTable">
                     <?php $i = 1; ?>
-                    <?php foreach ($jawaban as $j) : ?>
+                    <?php foreach ($query as $j) : ?>
                         <thead>
                             <tr>
                                 <th scope="col">No.</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Krtik dan Saran</th>
+                                <th scope="col">Tanggal</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><?php echo $i ?></td>
+                                <td><?php echo $j['name'] ?></td>
                                 <td><?php echo $j['kritik'] ?></td>
+                                <td><?php
+                                    $date = strtotime($j['date']);
+                                    echo date('d-m-Y', $date)
+                                    ?>
+                                </td>
                             </tr>
                         </tbody>
                 </table>

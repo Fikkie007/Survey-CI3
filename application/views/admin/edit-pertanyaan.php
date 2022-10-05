@@ -31,7 +31,7 @@
                 Kategori Kuisioner
             </div>
             <div class="card-body" style="background-color: #D9D9D9;">
-                <table class="table" id="myTable">
+                <table class="table" id="kategori">
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
@@ -46,8 +46,8 @@
                         <?php foreach ($data_kategori as $dk) : ?>
                             <tr>
                                 <th scope="row"><?= $i; ?></th>
-                                <td><?= $dk['kategori']; ?></td>
-                                <td><?= $dk['jumlah_responden']; ?></td>
+                                <td><?php echo $dk['kategori']; ?></td>
+                                <td><?php echo $dk['jumlah_responden']; ?></td>
                                 <td>
                                     <a href="<?= base_url('admin/editKategori/'); ?><?= $dk['id']; ?>">
                                         <img src="<?php echo base_url('Assets\Icons\edit.png') ?>" alt="" srcset="">

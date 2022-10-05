@@ -16,16 +16,26 @@ class HasilKuisioner extends CI_Controller
         $data['title'] = 'Hasil Kuisioner';
         $data['kategori'] = $this->db->get('kategori')->result_array();
         $data['hasil'] = $this->Hasil_model->hasil();
-        // $query = $this->db->query('SELECT * FROM jawaban_coba 
-        // WHERE answer = 1
-        // GROUP BY pertayaan_id');
-        // var_dump($query->num_rows());
-        // exit;
+        $data['button'] = $this->Hasil_model->buttonSort();
+
 
 
         $this->load->view('admin/header', $data);
         $this->load->view('admin/side-menu', $data);
         $this->load->view('admin/hasil-kuisioner', $data);
+        $this->load->view('admin/footer');
+    }
+
+    public function aaa($kategori)
+    {
+        $data['sort'] = $this->Hasil_model->kategori($kategori);
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Hasil Kuisioner';
+        $data['button'] = $this->Hasil_model->buttonSort();
+
+        $this->load->view('admin/header', $data);
+        $this->load->view('admin/side-menu', $data);
+        $this->load->view('admin/sort-result', $data);
         $this->load->view('admin/footer');
     }
 }
