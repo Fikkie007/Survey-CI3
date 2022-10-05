@@ -43,6 +43,21 @@
 
         color: #000000;
     }
+
+    .ql-editor {
+        box-sizing: border-box;
+        line-height: 1.42;
+        height: 100%;
+        outline: none;
+        overflow-y: auto;
+        padding: 12px 15px;
+        tab-size: 4;
+        -moz-tab-size: 4;
+        text-align: left;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        min-height: inherit;
+    }
 </style>
 
 
@@ -184,17 +199,20 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="container-fluid">
-                        <?= $i; ?>. <?= $p['pertanyaan']; ?>
+                        <strong><?= $i; ?>. <?= $p['pertanyaan']; ?></strong>
                     </div>
-                    <br>
-                    <!-- <input type="hidden" name="pertanyaan<?= $p['id']; ?>"> -->
-                    <input type="radio" id="answer[<?= $p['id']; ?>]" name="answer[<?= $p['id']; ?>]" value="1" required><label><?= $p['jawaban1']; ?></label>
-                    <br>
-                    <input type="radio" id="html2" name="answer[<?= $p['id']; ?>]" value="2" required><label><?= $p['jawaban2']; ?></label>
-                    <br>
-                    <input type="radio" id="html3" name="answer[<?= $p['id']; ?>]" value="3" required><label><?= $p['jawaban3']; ?></label>
-                    <br>
-                    <input type="radio" id="html4" name="answer[<?= $p['id']; ?>]" value="4" required><label><?= $p['jawaban4']; ?></label>
+                    <div class="container-fluid">
+                        <div class="container">
+                            <!-- <input type="hidden" name="pertanyaan<?= $p['id']; ?>"> -->
+                            <input type="radio" id="answer[<?= $p['id']; ?>]" name="answer[<?= $p['id']; ?>]" value="1" required><label><?= $p['jawaban1']; ?></label>
+                            <br>
+                            <input type="radio" id="html2" name="answer[<?= $p['id']; ?>]" value="2" required><label><?= $p['jawaban2']; ?></label>
+                            <br>
+                            <input type="radio" id="html3" name="answer[<?= $p['id']; ?>]" value="3" required><label><?= $p['jawaban3']; ?></label>
+                            <br>
+                            <input type="radio" id="html4" name="answer[<?= $p['id']; ?>]" value="4" required><label><?= $p['jawaban4']; ?></label>
+                        </div>
+                    </div>
                     <br><br>
                 </div>
             </div>

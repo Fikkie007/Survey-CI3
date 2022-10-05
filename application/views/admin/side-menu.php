@@ -86,6 +86,11 @@
                                 <p>Responden</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('Kritik'); ?>" class="nav-link">
+                                <p>Kritik dan Saran</p>
+                            </a>
+                        </li>
 
 
                     </ul>

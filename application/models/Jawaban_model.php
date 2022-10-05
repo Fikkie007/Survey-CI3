@@ -19,7 +19,8 @@ class Jawaban_model extends CI_Model
                     array(
                         'pertanyaan_id' => $i,
                         'answer' => $insert[$i],
-                        'data_pelanggan_id' => $user['id']
+                        'data_pelanggan_id' => $user['id'],
+                        'kritik' => $this->input->post('content')
                     )
 
                 );

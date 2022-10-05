@@ -340,7 +340,11 @@ class Admin extends CI_Controller
         } else {
             $data = [
                 'id_kategori' => $this->input->post('id_kategori'),
-                'pertanyaan' => $this->input->post('pertanyaan')
+                'pertanyaan' => $this->input->post('pertanyaan'),
+                'jawaban1' => 'Sangat Puas',
+                'jawaban2' => 'Puas',
+                'jawaban3' => 'Biasa',
+                'jawaban4' => 'Tidak Puas',
             ];
 
             $this->db->replace('pertanyaan', $data);
@@ -380,9 +384,5 @@ class Admin extends CI_Controller
         $this->load->view('admin/side-menu', $data);
         $this->load->view('admin/pertanyaan-sort', $data2);
         $this->load->view('admin/footer');
-    }
-
-    public function search()
-    {
     }
 }
