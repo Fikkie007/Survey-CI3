@@ -26,18 +26,49 @@
             <div class="card">
                 <div class="card-header" style="background-color: #65C8F2;">
                     Hasil Jawaban
+
                 </div>
                 <div class="card-body" style="background-color: #D9D9D9;">
-                    <div class="dropdown">
+
+
+                    <!-- <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Sort Kategori
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <?php foreach ($button as $h2) : ?>
-                                <li><a class="dropdown-item" href="<?php echo base_url('HasilKuisioner/aaa/') ?><?php echo $h2['kategori'] ?>"><?php echo $h2['kategori'] ?></a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('HasilKuisioner/kategori/') ?><?php echo $h2['kategori'] ?>"><?php echo $h2['kategori'] ?></a></li>
                             <?php endforeach; ?>
                         </ul>
-                    </div><br>
+                    </div> -->
+                    <!-- <a href="" class="btn btn-info">asdasd</a> -->
+
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sort Kategori
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <?php foreach ($button as $h2) : ?>
+                                            <li><a class="dropdown-item" href="<?php echo base_url('HasilKuisioner/kategori/') ?><?php echo $h2['kategori'] ?>"><?php echo $h2['kategori'] ?></a></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <a href="<?php echo base_url('HasilKuisioner/export') ?>">
+                                    <button class="btn btn-success" type="button" aria-expanded="false">
+                                        Export Data
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
                     <table class="table" id="myTable">
                         <thead>
                             <tr>

@@ -26,7 +26,7 @@ class HasilKuisioner extends CI_Controller
         $this->load->view('admin/footer');
     }
 
-    public function aaa($kategori)
+    public function kategori($kategori)
     {
         $data['sort'] = $this->Hasil_model->kategori($kategori);
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
@@ -37,5 +37,11 @@ class HasilKuisioner extends CI_Controller
         $this->load->view('admin/side-menu', $data);
         $this->load->view('admin/sort-result', $data);
         $this->load->view('admin/footer');
+    }
+
+    public function export()
+    {
+        $data['hasil'] = $this->Hasil_model->hasil();
+        $this->load->view('admin/export-result', $data);
     }
 }
