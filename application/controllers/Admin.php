@@ -15,7 +15,7 @@ class Admin extends CI_Controller
     public function index()
     {
         $data['title'] = 'Admin';
-        $data['url'] = 'admin/';
+        $data['url'] = 'admin';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['total'] = $this->db->count_all('user');
         $data['total_pertanyaan'] = $this->db->count_all('pertanyaan');
@@ -31,7 +31,7 @@ class Admin extends CI_Controller
     public function dataAdmin()
     {
         $data['title'] = 'Data Admin';
-        $data['url'] = 'admin/';
+        $data['url'] = 'admin';
         $count['admin'] = $this->db->get('user')->num_rows();
         $config['base_url'] = 'http://localhost:8080/Admin/dataAdmin/';
         $config['total_rows'] = $count['admin'];

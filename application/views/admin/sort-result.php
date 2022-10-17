@@ -32,7 +32,9 @@
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Sort Kategori
                         </button>
-                        <button type="button" class="btn btn-success">Export As Excel</button>
+                        <a href="<?php echo base_url('HasilKuisioner/export') ?>">
+                            <button type="button" class="btn btn-success">Export Data</button>
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <?php foreach ($button as $h2) : ?>
                                 <li><a class="dropdown-item" href="<?php echo base_url('HasilKuisioner/kategori/') ?><?php echo $h2['kategori'] ?>"><?php echo $h2['kategori'] ?></a></li>
@@ -68,8 +70,6 @@
             </div>
 
         </div>
-
-
 
     </section>
     <!-- /.content -->
