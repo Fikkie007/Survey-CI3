@@ -41,7 +41,7 @@
                 Pertanyaan
             </div>
             <div class="card-body" style="background-color: #D9D9D9;">
-                <table class="table" id="pertanyaan">
+                <table class="table" id="pertanyaan2">
                     <thead>
                         <tr>
                             <th scope="col">Kategori</th>

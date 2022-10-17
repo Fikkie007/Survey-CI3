@@ -52,7 +52,7 @@
         $('#admin').DataTable();
     });
     $(document).ready(function() {
-        $('#pertanyaan').DataTable();
+        $('#pertanyaan2').DataTable();
     });
     $(document).ready(function() {
         $('#kategori').DataTable();
