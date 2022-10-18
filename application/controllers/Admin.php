@@ -8,6 +8,7 @@ class Admin extends CI_Controller
         parent::__construct();
         is_logged_in();
         $this->load->model('Pertanyaan_model');
+        $this->load->model('Persentase_model');
         $this->load->library('form_validation');
         $this->load->library('pagination');
         $this->load->model('Sort_model');
@@ -18,6 +19,11 @@ class Admin extends CI_Controller
         $data['url'] = 'admin';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['total'] = $this->db->count_all('user');
+        $data['persentase'] = $this->Persentase_model->index();
+        $data['answer'] = $this->Persentase_model->answer();
+        $data['answer2'] = $this->Persentase_model->answer2();
+        $data['answer3'] = $this->Persentase_model->answer3();
+        $data['answer4'] = $this->Persentase_model->answer4();
         $data['total_pertanyaan'] = $this->db->count_all('pertanyaan');
         $data['total_kategori'] = $this->db->count_all('kategori');
         $data['data_pelanggan'] = $this->db->count_all('data_pelanggan');
