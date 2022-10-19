@@ -21,9 +21,6 @@ class Admin extends CI_Controller
         $data['total'] = $this->db->count_all('user');
         $data['persentase'] = $this->Persentase_model->index();
         $data['answer'] = $this->Persentase_model->answer();
-        $data['answer2'] = $this->Persentase_model->answer2();
-        $data['answer3'] = $this->Persentase_model->answer3();
-        $data['answer4'] = $this->Persentase_model->answer4();
         $data['total_pertanyaan'] = $this->db->count_all('pertanyaan');
         $data['total_kategori'] = $this->db->count_all('kategori');
         $data['data_pelanggan'] = $this->db->count_all('data_pelanggan');
@@ -31,7 +28,7 @@ class Admin extends CI_Controller
         $this->load->view('admin/header', $data);
         $this->load->view('admin/side-menu', $data);
         $this->load->view('admin/body', $data);
-        $this->load->view('admin/footer');
+        $this->load->view('admin/footer', $data);
     }
 
     public function dataAdmin()
