@@ -20,4 +20,10 @@ class Kritik extends CI_Controller
         $this->load->view('admin/kritik-views', $data);
         $this->load->view('admin/footer');
     }
+
+    public function export()
+    {
+        $data['query'] = $this->Kritik_model->kritik();
+        $this->load->view('admin/export-result-kritik', $data);
+    }
 }

@@ -22,6 +22,11 @@
                 Hasil Jawaban Kritik dan Saran
             </div>
             <div class="card-body" style="background-color: #D9D9D9;">
+                <a target="_blank" href="<?php echo base_url('Kritik/export') ?>">
+                    <button class="btn btn-success" type="button" aria-expanded="false">
+                        Export Data
+                    </button>
+                </a><br><br>
                 <table class="table" id="myTable">
                     <?php $i = 1; ?>
                     <?php foreach ($query as $j) : ?>
