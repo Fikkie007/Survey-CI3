@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <a href="<?php echo base_url('HasilKuisioner/export') ?>">
+                                <a target="_blank" href="<?php echo base_url('HasilKuisioner/export') ?>">
                                     <button class="btn btn-success" type="button" aria-expanded="false">
                                         Export Data
                                     </button>

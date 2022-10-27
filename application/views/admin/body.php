@@ -82,59 +82,22 @@
                     </div>
                 </div>
                 <!-- ./col -->
-            </div>
-            <!-- /.row -->
-            <!-- Main row -->
-            <div class="row">
-                <!-- Left col -->
-                <section class="col-lg-7 connectedSortable">
-                    <!-- Custom tabs (Charts with tabs)-->
-                    <!-- /.card -->
-
-                    <!-- DIRECT CHAT -->
-                    <!--/.direct-chat -->
-
-                    <!-- TO DO List -->
-                    <!-- /.card -->
-                </section>
-                <!-- /.Left col -->
-                <!-- right col (We are only adding the ID to make the widgets sortable)-->
-                <section class="col-lg-5 connectedSortable">
-
-                    <!-- Map card -->
-                    <!-- /.card -->
-
-                    <!-- solid sales graph -->
-                    <!-- /.card -->
-
-                    <!-- Calendar -->
-                    <!-- /.card -->
-                </section>
-                <!-- right col -->
-            </div>
+            </div><br>
             <!-- /.row (main row) -->
         </div><!-- /.container-fluid -->
-
-        <div class="row">
-            <div class="col-xl-6">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-chart-area me-1"></i>
-                        Presentase Jawaban Survey
+        <center>
+            <div class="container">
+                <div class="col-xl-8">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-chart-area me-1"></i>
+                            Presentase Jawaban Survey
+                        </div>
+                        <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                     </div>
-                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                 </div>
             </div>
-            <div class="col-xl-6">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-chart-bar me-1"></i>
-                        Bar Chart Example
-                    </div>
-                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                </div>
-            </div>
-        </div>
+        </center>
 
     </section>
     <!-- /.content -->

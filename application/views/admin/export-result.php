@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil</title>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+    <title>Export Data Ke Excel Dengan PHP - www.malasngoding.com</title>
 </head>
 
 <body>
-    <table id="example" class="table table-striped" style="width:100%">
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #3c3c3c;
+            padding: 3px 8px;
+
+        }
+
+        a {
+            background: blue;
+            color: #fff;
+            padding: 8px 10px;
+            text-decoration: none;
+            border-radius: 2px;
+        }
+    </style>
+
+    <?php
+    header("Content-type: application/vnd-ms-excel");
+    header("Content-Disposition: attachment; filename=Hasil Jawaban.xls");
+    ?>
+
+    <table border="1">
         <thead>
             <tr>
                 <th>#</th>
@@ -22,39 +48,19 @@
             </tr>
         </thead>
         <tbody>
-            <?php $i = 0; ?>
+            <?php $i = 1; ?>
             <?php foreach ($hasil as $h) : ?>
-                <?php $i++; ?>
                 <tr>
-                    <th><?php echo $i ?></th>
+                    <th scope="row"><?php echo $i ?></th>
                     <td><?php echo $h['name'] ?></td>
                     <td><?php echo $h['pertanyaan'] ?></td>
                     <td><?php echo $h['kategori'] ?></td>
                     <td><?php echo $h['answer'] ?></td>
                 </tr>
+                <?php $i++; ?>
             <?php endforeach; ?>
         </tbody>
     </table>
 </body>
 
 </html>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
-
-
-<script>
-    $(document).ready(function() {
-        $('#example').DataTable({
-            dom: 'Bfrtip',
-            buttons: [
-                'copy', 'csv', 'excel', 'pdf', 'print'
-            ]
-        });
-    })
-</script>
