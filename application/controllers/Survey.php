@@ -43,7 +43,7 @@ class Survey extends CI_Controller
             $this->session->set_userdata($data);
             $this->db->insert('data_pelanggan', $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
-            Silahkan Mengisi Kuesioner
+            Silahkan mengisi kuesioner
             </div>');
             
             redirect('pertanyaan');
