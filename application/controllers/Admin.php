@@ -338,7 +338,7 @@ class Admin extends CI_Controller
 
             $this->load->view('admin/header', $data);
             $this->load->view('admin/side-menu', $data);
-            $this->load->view('admin/edit-kategori-pertanyaan',  $data2, $data);
+            $this->load->view('admin/edit-kategori-pertanyaan', $data2, $data);
             $this->load->view('admin/footer');
         } else {
             $data = [

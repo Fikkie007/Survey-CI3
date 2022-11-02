@@ -43,23 +43,27 @@ class Auth extends CI_Controller
                     // } else {
                     //     redirect('admin');
                     // }
-
+                    // }
+                
                     redirect('admin');
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
                     Wrong password!
                     </div>');
+                
                     redirect('login');
                 }
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
                 This email has not been activated!
                 </div>');
+
                 redirect('login');
             }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
             Email is not registered!
+
             </div>');
             redirect('login');
         }
