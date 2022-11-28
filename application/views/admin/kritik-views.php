@@ -28,6 +28,7 @@
                     </button>
                 </a><br><br>
                 <table class="table" id="myTable">
+<<<<<<< HEAD
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
@@ -40,6 +41,21 @@
                         <?php $i = 1; ?>
                         <?php foreach ($query as $j) : ?>
                             <tr>
+=======
+                    <?php $i = 1; ?>
+                        <thead>
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Krtik dan Saran</th>
+                                <th scope="col">Tanggal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php $i = 1; ?>
+                        <?php foreach ($query as $j) : ?>
+                            <tr>
+>>>>>>> 1f43c5bfc710f7bef7a8073c3224f267c1b4f991
                                 <td><?php echo $i++ ?></td>
                                 <td><?php echo $j['name'] ?></td>
                                 <td><?php echo $j['kritik'] ?></td>
@@ -49,9 +65,16 @@
                                     ?>
                                 </td>
                             </tr>
+<<<<<<< HEAD
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+=======
+                            <?php endforeach; ?>
+                        </tbody> 
+                </table>
+            
+>>>>>>> 1f43c5bfc710f7bef7a8073c3224f267c1b4f991
             </div>
         </div>
 

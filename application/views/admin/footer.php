@@ -1,7 +1,7 @@
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center: center; text-lg-start bg-light text-muted">
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: #EDF3F3;">
-        2022 - 2023 Survey Kepuasan Pelanggan
+             2022 - 2023 Survey Kepuasan Pelanggan
     </div>
     <!-- Copyright -->
 </footer>
