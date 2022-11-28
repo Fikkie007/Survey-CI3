@@ -28,19 +28,19 @@
                     </button>
                 </a><br><br>
                 <table class="table" id="myTable">
-                    <?php $i = 1; ?>
-                    <?php foreach ($query as $j) : ?>
-                        <thead>
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Krtik dan Saran</th>
+                            <th scope="col">Tanggal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php $i = 1; ?>
+                        <?php foreach ($query as $j) : ?>
                             <tr>
-                                <th scope="col">No.</th>
-                                <th scope="col">Nama</th>
-                                <th scope="col">Krtik dan Saran</th>
-                                <th scope="col">Tanggal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><?php echo $i ?></td>
+                                <td><?php echo $i++ ?></td>
                                 <td><?php echo $j['name'] ?></td>
                                 <td><?php echo $j['kritik'] ?></td>
                                 <td><?php
@@ -49,10 +49,9 @@
                                     ?>
                                 </td>
                             </tr>
-                        </tbody>
+                        <?php endforeach; ?>
+                    </tbody>
                 </table>
-                <?php $i++;  ?>
-            <?php endforeach; ?>
             </div>
         </div>
 
