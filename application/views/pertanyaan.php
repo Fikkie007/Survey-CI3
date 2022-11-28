@@ -104,8 +104,8 @@
                 </div>
                 <div class="text2">
                     <p class="card-text">1. Setelah anda mengisi data diri dengan benar selanjutnya akan diarahkan untuk mengisi kuesioner sebagai Pelanggan Perumda Air Minum Tugu Tirta untuk menilai pelayanan kami.<br>
-                        2. Pilih range nilai dari setiap pertanyaan yang telah diberikan<br>
-                        3. Isi dengan baik dan jujur sesuai pelayanan kami </p>
+                                         2. Pilih range nilai dari setiap pertanyaan yang telah diberikan<br>
+                                         3. Isi dengan baik dan jujur sesuai pelayanan kami </p>
                 </div>
                 <br>
                 <p class="card-text">

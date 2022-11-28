@@ -29,7 +29,6 @@
                 </a><br><br>
                 <table class="table" id="myTable">
                     <?php $i = 1; ?>
-                    <?php foreach ($query as $j) : ?>
                         <thead>
                             <tr>
                                 <th scope="col">No.</th>
@@ -39,8 +38,10 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <?php $i = 1; ?>
+                        <?php foreach ($query as $j) : ?>
                             <tr>
-                                <td><?php echo $i ?></td>
+                                <td><?php echo $i++ ?></td>
                                 <td><?php echo $j['name'] ?></td>
                                 <td><?php echo $j['kritik'] ?></td>
                                 <td><?php
@@ -49,10 +50,10 @@
                                     ?>
                                 </td>
                             </tr>
-                        </tbody>
+                            <?php endforeach; ?>
+                        </tbody> 
                 </table>
-                <?php $i++;  ?>
-            <?php endforeach; ?>
+            
             </div>
         </div>
 
