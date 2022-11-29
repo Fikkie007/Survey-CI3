@@ -24,7 +24,6 @@ class Admin extends CI_Controller
         $data['total_pertanyaan'] = $this->db->count_all('pertanyaan');
         $data['total_kategori'] = $this->db->count_all('kategori');
         $data['data_pelanggan'] = $this->db->count_all('data_pelanggan');
-
         $this->load->view('admin/header', $data);
         $this->load->view('admin/side-menu', $data);
         $this->load->view('admin/body', $data);
