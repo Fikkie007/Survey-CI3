@@ -5,7 +5,7 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <?= $this->session->flashdata('message'); ?>
-                    <h1 class="m-0">Edit Pertanyaan</h1>
+                    <h1 class="m-0">Edit Kategori</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">

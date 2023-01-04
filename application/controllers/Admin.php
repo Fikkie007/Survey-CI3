@@ -154,7 +154,7 @@ class Admin extends CI_Controller
     public function editQuestion()
     {
 
-        $data['title'] = 'Edit Pertanyaan';
+        $data['title'] = 'Edit Kategori';
         $data['user'] = $this->db->get_where('user', ['email' =>
         $this->session->userdata('email')])->row_array();
         $data['data_kategori'] = $this->db->get('kategori')->result_array();
