@@ -130,32 +130,59 @@
 
   <!-- Features -->
   <section id="features">
-    <div class="container">
-      <h2 class="text-center">Kamu Nanya? Kamu Bertanya Tanya??</h2>
-      <div class="row text-center">
-        <div class="col-md-4 features">
-          <img src="Assets\img\work.png" class="img-fluid" alt="">
-          <h4>Marketing Online</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quae atque quibusdam vero maiores, laborum facere. Deleniti perspiciatis explicabo rerum fugit, voluptatum, animi quia deserunt modi est impedit dicta. Eligendi.</p>
+    <div class="row">
+      <div class="col-mb-4">
+        <div class="card">
+          <div class="card-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.60122417454!2d112.60092676504753!3d-7.975674279400731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628f7c187730b%3A0xb9b85e5b6f5d00fe!2sPerumda%20Air%20Minum%20Tugu%20Tirta%20Kota%20Malang!5e0!3m2!1sen!2sid!4v1673275965325!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
-
-        <div class="col-md-4 features">
-          <img src="Assets\img\package.png" class="img-fluid" alt="">
-          <h4>Hasil Coba</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quae atque quibusdam vero maiores, laborum facere. Deleniti perspiciatis explicabo rerum fugit, voluptatum, animi quia deserunt modi est impedit dicta. Eligendi.</p>
-
-        </div>
-
-        <div class="col-md-4 features">
-          <img src="Assets\img\search.png" class="img-fluid" alt="">
-          <h4>Search</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quae atque quibusdam vero maiores, laborum facere. Deleniti perspiciatis explicabo rerum fugit, voluptatum, animi quia deserunt modi est impedit dicta. Eligendi.</p>
-
-
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4>PERUMDA TUGU TIRTA KOTA MALANG</h4>
+            <address>
+              <strong>Kantor Pusat:</strong>
+              <br>
+              Jl. Terusan Danau Sentani Kota Malang No. 100
+              <br>
+              Kota Malang - Jawa Timur, Indonesia
+            </address>
+            <abbr title="Phone Number">
+              <strong>Phone: </strong>
+            </abbr>
+            0341-715-103
+            <br>
+            <abbr title="Fax">
+              <strong>Fax: </strong>
+            </abbr>
+            0341-715-107
+            <br>
+            <abbr title="Email Address">
+              <strong>Email: </strong>
+            </abbr>
+            humas@perumdatugutirta.co.id
+            <br>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue pt-4">
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© Copyright 2022 - <script>
+        document.write(/\d{4}/.exec(Date())[0])
+      </script>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
