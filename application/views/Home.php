@@ -126,9 +126,6 @@
           </div>
         </div>
       </div>
-      <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#fff" fill-opacity="1" d="M0,192L120,213.3C240,235,480,277,720,261.3C960,245,1200,171,1320,133.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-      </svg>
   </section>
 
   <!-- Features -->
@@ -159,18 +156,6 @@
       </div>
     </div>
   </section>
-
-  <!-- <section id="contact">
-    <div class="cotainer">
-      <h2 class="text-center">Hubungi Saya ya ges ya!</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="Assets\img\contact.png" alt="" class="img fluid">
-        </div>
-
-      </div>
-    </div>
-  </section> -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
