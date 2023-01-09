@@ -80,29 +80,13 @@
     </nav>
 
 </head>
+<br>
 
 <body>
-    <div class="container-fluid" style="background-color: #D0E8FA;">
-        <div class="container-fluid rounded" style="background-color: #ABDCFF;"><br><br>
-            <center>
-                <h3 class="mb-0"> Bagaimana Kepuasan Anda<br> Dalam Pelayanan Kami</h3>
-            </center><br><br>
-        </div>
-        <div class="container-fluid"><br>
-            <br>
-            <div class=" d-flex flex-row justify-content-center">
-                <a href=""><img src="<?= base_url('Assets\angry-256x256-1991061.png'); ?>" /></a>
-                <a href=""><img src="<?= base_url('Assets\sad-256x256-1991063.png'); ?>" /></a>
-                <a href=""><img src="<?= base_url('Assets\wow-256x256-1991062.png'); ?>" /></a>
-                <a href=""><img src="<?= base_url('Assets\haha-256x256-1991060.png'); ?>" /></a>
-            </div><br>
-            <br>
-        </div><br><br><br>
-        <div class="container-fluid">
-            <center>
-                <h2>Terimakasih Telah Berpartisipasi Dalam Mengisi <br> Jawaban Survey Anda</h2>
-            </center>
-        </div>
+    <div class="container-fluid" style="background-color: #D0E8FA;"><br><br><br>
+        <center>
+            <h2>Terimakasih Telah Berpartisipasi Dalam Mengisi <br> Jawaban Survey Anda</h2>
+        </center><br><br><br>
     </div>
 </body>
 <br><br><br>
